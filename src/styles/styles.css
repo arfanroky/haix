@@ -44,33 +44,38 @@ body{
   height: 100%;
 }
 
-.left > .user-icon {
+.left > .user-img-box {
   width: 100px;
   height: 100px;
   margin: 1rem 0;
   background: #ecedef;
   padding: 1rem;
+  border: 1px solid red;
   border-radius: 50%;
 }
 
-.left > .user-icon > .icon {
+.user-img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  overflow: hidden;
+}
+
+.left > .user-img-box > .icon {
   width: 100%;
   height: 100%;
 }
 
-.left > .edit {
-  padding: 1rem 0;
-}
 
-.left > .edit > span {
+.left > .user-name{
+  margin: .4rem 0;
   font-size: 1.1rem;
-  font-weight: 600;
-  display: inline-block;
-  margin-bottom: 10px;
 }
 
-.left > .edit > .edit-icon {
-  color: blue;
+.left > .user-email{
+  margin-bottom: .5rem;
+  font-size: 1.1rem;
 }
 
 .right {
@@ -80,19 +85,16 @@ body{
 
 }
 
-.right > .top{
+.right > .heading{
     border-bottom: 1px solid #ecedef;
     padding: 1rem 1rem .5rem 1rem;
 }
 
-.right > .bottom{
-    padding: 2rem;
-    display: flex;
-    gap: 4rem;
-}
-
-.right > .functionality > select{
-    padding: .5rem 1rem;
+.right-top-component{
+  display: flex;
+  gap: 2rem;
+  margin: 1rem;
+  align-items: center;
 }
 
 button {
@@ -138,6 +140,7 @@ button {
 .btn-container {
   display: flex;
   gap: 10px;
+  margin: 1rem;
 }
 
 
@@ -146,15 +149,15 @@ button {
     border: 2px solid #ecedef;
 }
 
-.social-connection > .top{
+.social-connection > .social-login{
     border-bottom: 1px solid #ecedef;
     padding: 1rem 1rem .5rem 1rem;
 }
-.social-connection > .center{
+.social-connection > .manage-companies{
     border-bottom: 1px solid #ecedef;
     padding: 1rem 1rem .5rem 1rem;
 }
-.social-connection > .bottom{
+.social-connection > .feature-management{
     border-bottom: 1px solid #ecedef;
     padding: 1rem 1rem .5rem 1rem;
 }

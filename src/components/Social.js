@@ -5,16 +5,13 @@ import { FaTrashAlt } from 'react-icons/fa';
 const Social = ({state, setState, className, Icon, children}) => {
 
     return (
-        // Reusable component
         <div className='btn-container'>
-            <button  onClick={() => setState(true)}>
-          <Icon/> {children}
-        </button>
-        <button className={state && className} onClick={() => setState(false)}>
-        {
-            state ? <span> <Icon/> {children} <FaTrashAlt/> </span> : ''
+        <button className={state && className} onClick={() => {!state ? setState(true): setState(false)}}>
+         {
+          state ? <span> <Icon/> {children} <FaTrashAlt/> </span> : <span> <Icon/> {children}</span>
            }
         </button>
+
         </div>
     );
 };
