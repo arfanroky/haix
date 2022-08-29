@@ -67,7 +67,6 @@ body{
   height: 100%;
 }
 
-
 .left > .user-name{
   margin: .4rem 0;
   font-size: 1.1rem;
@@ -120,13 +119,7 @@ button {
     color: white;
 }
 
-.empty {
-  width: 200px;
-  height: 40px;
-  background-color: #2291F4;
-  padding: 1rem 0;
-  margin: 1rem 0;
-}
+
 .faColor {
   background-color: #2291F4;
 }
@@ -149,15 +142,15 @@ button {
     border: 2px solid #ecedef;
 }
 
-.social-connection > .social-login{
+.social-login{
     border-bottom: 1px solid #ecedef;
     padding: 1rem 1rem .5rem 1rem;
 }
-.social-connection > .manage-companies{
+.manage-companies{
     border-bottom: 1px solid #ecedef;
     padding: 1rem 1rem .5rem 1rem;
 }
-.social-connection > .feature-management{
+.feature-management{
     border-bottom: 1px solid #ecedef;
     padding: 1rem 1rem .5rem 1rem;
 }
