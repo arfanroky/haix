@@ -2,6 +2,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  
+}
+
+body{
+    background: rgb(244, 238, 238);
 }
 
 /* Main Container */
@@ -10,12 +15,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: rgb(244, 238, 238);
 }
 
 .content-container {
   width: 1000px;
-  height: 700px;
+  height: max-content;
   background-color: white;
   padding: 2rem;
 }
@@ -26,16 +30,18 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 20px;
 }
 
 .left {
   flex: 1;
   background-color: white;
-  border: 2px solid red;
+  border: 2px solid #ecedef;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  height: 100%;
 }
 
 .left > .user-icon {
@@ -69,37 +75,101 @@
 
 .right {
   flex: 2;
-  background-color: aqua;
+  border: 2px solid #ecedef;
+  height: 100%;
+
+}
+
+.right > .top{
+    border-bottom: 1px solid #ecedef;
+    padding: 1rem 1rem .5rem 1rem;
+}
+
+.right > .bottom{
+    padding: 2rem;
+    display: flex;
+    gap: 4rem;
+}
+
+.right > .functionality > select{
+    padding: .5rem 1rem;
 }
 
 button {
   outline: none;
   border: none;
   padding: 1rem 2rem;
-  color: white;
   font-size: 1rem;
   font-weight: bold;
 }
 
+
+
 .facebook {
-  background: linear-gradient(to right, blue, rgb(134, 134, 230));
+  background: #2291F4;
+  color: white;
 }
 .instagram {
-  background: linear-gradient(90deg, red, yellow);
+  background: linear-gradient( 90deg, #FF006C, #FFCC00, #8801FF);
+  color: white;
 }
 .linkedIn {
-  background: linear-gradient(90deg, blue, cyan);
+    background: #2291F4;
+    color: white;
 }
 
 .empty {
   width: 200px;
   height: 40px;
-  background-color: blue;
+  background-color: #2291F4;
   padding: 1rem 0;
   margin: 1rem 0;
+}
+.faColor {
+  background-color: #2291F4;
+}
+.instColor{
+  background: linear-gradient( 90deg, #FF006C, #FFCC00, #8801FF);
+}
+.linkColor{
+  background-color: #2291F4;
 }
 
 .btn-container {
   display: flex;
   gap: 10px;
+}
+
+
+.social-connection{
+    height: 100%;
+    border: 2px solid #ecedef;
+}
+
+.social-connection > .top{
+    border-bottom: 1px solid #ecedef;
+    padding: 1rem 1rem .5rem 1rem;
+}
+.social-connection > .center{
+    border-bottom: 1px solid #ecedef;
+    padding: 1rem 1rem .5rem 1rem;
+}
+.social-connection > .bottom{
+    border-bottom: 1px solid #ecedef;
+    padding: 1rem 1rem .5rem 1rem;
+}
+
+@media screen and (max-width: 768px) {
+    .preference{
+      flex-direction: column;
+      height: auto;
+      margin-bottom: 1rem;
+      
+    }
+    .left{
+      width: 100%;
+    }
+    .right{
+      width: 100%;
+    }
 }
